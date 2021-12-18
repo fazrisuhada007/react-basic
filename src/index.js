@@ -3,10 +3,31 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import HelloComponent from './component/HelloComponent.jsx';
+import StateFullComponent from './container/StateFullComponent.jsx';
+import YouTubeComp from './component/YouTubeComp/YouTubeComp';
+import Home from './container/Home/Home';
+// import { createStore } from 'redux';
+// import { Provider } from 'react-redux';
+// import rootReducer from './redux/reducer/globalReducer';
 
+// Store
+// const storeRedux = createStore(rootReducer);
+
+// Membuat Redux
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Provider store={storeRedux}>
+//       <Home />
+//     </Provider>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
+// Membuat Context 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );
